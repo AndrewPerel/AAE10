@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<!-- Student's Name, Today's Date -->
+<!-- Andrew Perel, 4/20/2024 -->
 <html lang="en">
 <head>
- 
+
     <title>Chapter 10, Extend</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $(".p").hide();
+      });
+      $("#show").click(function(){
+        $(".p").show();
+      });
+    });
+    </script>
+
 </head>
 
 <body>
 
 	<div id="wrapper">
-        
-        <h1>Learning How to Use jQuery</h1>
-	
-		<article id="main">
-		
-                <p>I know how to create HTML pages.</p>
-                <p>I know how to style webpages with CSS.</p>
-                <p>I know how to add functionality to webpages with JavaScript.</p>
-                <p>I understand how to use the jQuery library.</p>
 
-                <button>Hide</button>
-                <button>Show</button>
-		
+        <h1>Learning How to Use jQuery</h1>
+
+		<article id="main">
+
+                <p class="p">I know how to create HTML pages.</p>
+                <p class="p">I know how to style webpages with CSS.</p>
+                <p class="p">I know how to add functionality to webpages with JavaScript.</p>
+                <p class="p">I understand how to use the jQuery library.</p>
+
+                <button id="hide">Hide</button>
+                <button id="show">Show</button>
+
 		</article>
-        
+
         <footer>
-            <p>Student's Name: </p>
-            <p>The latest version of jQuery is: </p>
-            <p>Resource used to complete this assignment: </p>
+            <p>Student's Name: Andrew Perel</p>
+            <p>The latest version of jQuery is: 3.7.1</p>
+            <p>Resource used to complete this assignment: https://releases.jquery.com/</p>
         </footer>
-	
+
 	</div>
 
 </body>
